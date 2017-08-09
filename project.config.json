@@ -1,0 +1,12 @@
+{
+  "project": {
+    "name": "proj richest",
+    "slug": "proj-richest",
+    "description": ""
+  },
+  "s3": {
+    "bucket": "graphics.axios.com",
+    "folder": "2017-07-27-proj-richest"
+  },
+  "files": []
+}

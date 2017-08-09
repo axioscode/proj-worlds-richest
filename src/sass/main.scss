@@ -1,0 +1,97 @@
+@import 'feta';
+@import 'reset';
+@import '_arrowNav';
+
+
+div {
+	//outline: 1px solid pink;
+}
+
+.nav {
+
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 0 0 15px 0;
+
+	h2 {
+		font-size: 16px;
+		font-family: $sans;
+		font-weight: 500;
+	}
+
+	p {
+		color: $color-gray-700;
+		font-family: $mono;
+		font-size: 14px;
+		margin: 4px;
+	}
+}
+
+
+.chart {
+	width: 100%;
+
+	.bar {
+		fill: $color-purple-100;
+
+		&.active {
+			fill: $color-purple-700;
+		}
+	}
+
+	.lbl {
+		font-family: $mono;
+		font-size: 12px;
+		fill: $color-gray-700;
+		text-anchor: middle;
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+		}
+
+	}
+
+	.axis {
+		text {
+			font-family: $mono;
+			fill: $color-gray-700 !important;
+			pointer-events: none;
+		}
+
+		&.axis--x .tick {
+			display: none;
+
+			&.show {
+				display: inherit;
+			}
+		}
+
+		.tick text {
+			font-size: 12px;
+		}
+
+		line, path {
+			stroke: #c2c2c2 !important;
+			stroke-width: .5;
+			pointer-events: none;
+		}
+
+		.domain {
+			display: none;
+		}
+	}
+
+
+}
+
+
+
+@media(max-width: 621px) {
+
+	.lbl {
+		display: none;
+	}
+
+}
